@@ -5,7 +5,9 @@
 	[ApiMajorVersion]				INT NOT NULL,
 	[ApiMinorVersion]				INT NOT NULL,
 	[ApiPatchVersion]				INT NOT NULL,
-	[ApiDatabase]					NVARCHAR(256) NULL,
+	[ApiDatabaseEngine]				NVARCHAR(256) NULL,
+	[ApiDatabaseServer]				NVARCHAR(256) NULL,
+	[ApiDatabaseName]				NVARCHAR(256) NULL,
 	[ApiDatabaseConnectionString]	NVARCHAR(256) NULL,
 	[ApiCodeGenerationTool]			NVARCHAR(256) NULL,
 	CONSTRAINT [PK_ApiMetadata] PRIMARY KEY ([ApiMetadataId])
