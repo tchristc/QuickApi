@@ -59,10 +59,21 @@
     <Folder Include="Properties" />
     <Folder Include="dbo" />
     <Folder Include="dbo\Tables" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Data" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\EntityTable.sql" />
-    <Build Include="dbo\Tables\EntityColumn.sql" />
-    <Build Include="dbo\Tables\EntityColumnType.sql" />
+    <Build Include="dbo\Tables\Domain.sql" />
+    <Build Include="dbo\Tables\DomainColumn.sql" />
+    <Build Include="dbo\Tables\DomainColumnType.sql" />
+    <Build Include="dbo\Tables\DomainType.sql" />
+    <Build Include="dbo\Tables\ApiMetadata.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Data\MergeEntityTable.sql" />
+    <None Include="QuickApi.Database.publish.xml" />
   </ItemGroup>
 </Project>

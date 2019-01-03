@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuickApi.Entities.Models;
+using System;
+using System.Linq;
 
 namespace QuickApi.ConsoleApp
 {
@@ -7,6 +9,12 @@ namespace QuickApi.ConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            using (var ctx = new QuickApiDatabaseContext())
+            {
+                Console.WriteLine("Hello World!");
+            }
+
             Console.ReadLine();
         }
     }
